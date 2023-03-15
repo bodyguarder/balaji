@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -11,7 +11,54 @@
 </head>
 
 <body>
+  <header class="header">
+    <div class="header__container container">
+      <a class="header__logo-link logo" href="#">
+        <img class="logo__img" src="images/header/logo.png" alt="balaji logo">
+      </a>
 
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#">home</a>
+        </li>
+
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#">about</a>
+        </li>
+
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#">chips</a>
+        </li>
+
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#">services</a>
+        </li>
+      </ul>
+
+      <form class="header__form search-form" action="#">
+        <button class="search-form__button" style="background-image: url(images/sprite.svg#search-icon)">
+          <span class="sr-only">search button</span>
+        </button>
+
+        <label class="sr-only" for="search-input">search input</label>
+
+        <input class="search-form__input" name="search-input" id="search-input" type="text" placeholder="Search">
+
+        <button class="search-form__button search-form__button--cart-btn"
+          style="background-image: url(images/sprite.svg#cart-icon);">
+          <span class="sr-only">cart button</span>
+        </button>
+      </form>
+    </div>
+  </header>
+
+  <main class="main">
+
+  </main>
+
+  <footer class="footer">
+
+  </footer>
 </body>
 
 </html>

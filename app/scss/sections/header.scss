@@ -1,0 +1,26 @@
+.header {
+  padding-top: 57px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-item {
+    &:not(:last-child) {
+      margin-right: 58px;
+    }
+  }
+
+  &__nav-link {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

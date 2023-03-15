@@ -1,0 +1,43 @@
+.search-form {
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 37px;
+  background-color: $black;
+
+  &__button {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &--cart-btn {
+      position: relative;
+      width: 50px;
+      background-size: contain;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 1px;
+        height: 46px;
+        transform: translateY(-50%);
+        background-color: $white;
+      }
+    }
+  }
+
+  &__input {
+    padding: 23px 13px;
+    font-weight: 400;
+    font-size: 24px;
+    color: $white;
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+}
