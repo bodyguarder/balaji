@@ -36,7 +36,7 @@
       </ul>
 
       <form class="header__form search-form" action="#">
-        <button class="search-form__button" style="background-image: url(images/sprite.svg#search-icon)">
+        <button class="search-form__button" style="background-image: url(images/sprite.svg#search-icon)" type="submit">
           <span class="sr-only">search button</span>
         </button>
 
@@ -45,7 +45,7 @@
         <input class="search-form__input" name="search-input" id="search-input" type="text" placeholder="Search">
 
         <button class="search-form__button search-form__button--cart-btn"
-          style="background-image: url(images/sprite.svg#cart-icon);">
+          style="background-image: url(images/sprite.svg#cart-icon);" type="submit">
           <span class="sr-only">cart button</span>
         </button>
       </form>
@@ -53,7 +53,41 @@
   </header>
 
   <main class="main">
+    <section class="product-page">
+      <div class="product-page__container container">
+        <div class="product-page__description">
+          <h1 class="product-page__title">flamin hot nachos</h1>
 
+          <p class="product-page__text">Presenting the Classic Nachos with a Flaming Hot Twist. It will Rock your taste buds with Chilli & Lime.</p>
+          
+          <div class="product-page__wrapper">
+            <button class="product-page__btn" type="submit">add to cart</button>
+
+            <ul class="product-page__count-list count">
+              <li class="count__item">+</li>
+
+              <li class="count__item count__item--num">
+                <span>5</span>
+              </li>
+
+              <li class="count__item">-</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="product-page__content">
+          <img class="product-page__img" src="images/product-page/nachos-hot.png" alt="nachos images">
+        </div>
+
+        <ul class="product-page__list">
+          <li class="product-page__item">chilli</li>
+
+          <li class="product-page__item">corn</li>
+
+          <li class="product-page__item">spices</li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
