@@ -1,7 +1,25 @@
 .product-page {
+  position: relative;
+  padding-bottom: 100px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 105px;
+    height: 260px;
+    right: -25px;
+    bottom: 0;
+    background-image: url('../images/product-page/big-chilli.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(20deg);
+  }
+
   &__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   &__title {
@@ -44,7 +62,7 @@
 
   &__text {
     padding-bottom: 50px;
-    max-width: 630px;
+    max-width: 575px;
     width: 100%;
     font-size: 25px;
     line-height: 1.2;
@@ -84,10 +102,81 @@
   }
 
   &__content {
+    position: relative;
+    transform: rotate(-10deg);
   }
 
   &__img {
+    &--shadow {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: -10%;
+      transform: scale(1.5);
+    }
   }
 
+  &__list {
+    margin-top: 40px;
+    align-self: start;
+  }
 
+  &__item {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    &::before {
+      content: '';
+      display: block;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--chilli {
+      background-color: $blue-100;
+
+      &::before {
+        width: 65px;
+        height: 45px;
+        background-image: url('../images/sprite.svg#chilli');
+      }
+    }
+
+    &--corn {
+      background-color: $red-100;
+
+      &::before {
+        width: 28px;
+        height: 56px;
+        background-image: url('../images/sprite.svg#corn');
+      }
+    }
+
+    &--spices {
+      background-color: $yellow-200;
+
+      &::before {
+        width: 37px;
+        height: 45px;
+        background-image: url('../images/sprite.svg#spices');
+      }
+    }
+  }
 }
